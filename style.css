@@ -1,0 +1,73 @@
+/* Startup styles */
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+/* Styling */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 15% auto 0 auto;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #59819c;
+    background: #d6fbf8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle::before {
+    font-size: 30px;
+    font-weight: 900;
+    top: -100px;
+
+    display: block;
+    position: absolute;
+}
+.circle_1::before {
+    content: 'PLAYER 1';
+    color: #68bf60;
+}
+.circle_2::before {
+    content: 'PLAYER 2';
+    color: #ff5967;
+}
+
+
+.versus {
+    font-weight: 900;
+    font-size: 50px;
+    color: #59819c;
+}
+
+.start-btn {
+    padding: 7px 15px;
+    margin: 0 auto;
+    background: #59819c;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 900;
+    color: #eeeeee;
+
+    border-radius: 20px;
+    border: 5px solid #68bf60;
+    display: block;
+}
